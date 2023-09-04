@@ -1,36 +1,36 @@
 @font-face{
-    font-family:"azure-font-s" ;
+    font-family:"azure-font" ;
     src: url(assets/fonts/latest.woff2);
-    font-weight: 50;
+    font-weight: 500;
 }
 @font-face{
-    font-family:"azure-font-m" ;
+    font-family:"azure-font" ;
     src: url(assets/fonts/latest\ \(1\).woff2);
     font-weight: 600;
 }
 @font-face{
-    font-family:"icon" ;
+    font-family:"azure-font" ;
     src: url(assets/fonts/MWFFluentIcons.woff2);
+    font-weight: 800sss;
 }
-
 *{
     padding: 0;
-    margin: 0;
+    margin: 1px;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
     box-sizing: border-box;
 }
-
 body{
     font-size: 1rem;
-    letter-spacing: -0.03em;
-    
+    letter-spacing: -0.03em;  
 }
-
-
+.azure-text{
+    font-family:"azure-font-s" ;
+    font-size: 18px;
+    width: 44.78px;
+    height: 24px;
+    line-height: 44%;
+}
 /* header */
-
-
-
 .nav-bar {
     width: 100%;
     background-color: #ffffff;
@@ -41,30 +41,41 @@ body{
 ul{
     justify-content: space-around;
     padding-top: 20px;
+    padding-left: 0px;
     align-items: center;
 }
-
 li{
     list-style-type: none;
+    font-size: 13px;
     display: inline;
     text-align: center;
     justify-content: space-between;
-    padding: 4px;
+    padding: 0px 2px 5px 4px;
 }
-
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.main-menu{
+    display: flex;
+    padding-top: 8px;
+    
+}
+.logo-and-name{
+    justify-content: center;
+    padding-right: 20px;
+    text-align: center;
+}
 .search{
-    background: #f8f9fa;
+    background: transparent;
     border-radius: 4px;
     border-color: #747479;
     padding: 1px 24px 1px 12px;
-
 }
 .free-account-btn{
     background-color: #89c402;
     border-radius: 4px;
 }
-
-
 .mobile div{
     width: 35px;
     height: 3px;
@@ -72,12 +83,78 @@ li{
     margin: 6px 0;
     transition: 0.4s;
 }
+.nav-bar{
+    padding: -1px 12px;
+    
+}
+.nav-bar .logo{
+    display: inline-block;
+    width: 43px;
+    height: 30px;
+    line-height: 0;
+    padding-left: 0px;
+    padding-top: 1.5px;
+    vertical-align:bottom;
+    padding-right: 14px;
+}
+.nav-items{
+    justify-content: space-around;
+    
+}
+.nav-bar .logo svg {
+    width: 100%;
+    height: 100%;
+}
 
+.down-arrow::after{
+    content: '\e70d';
+    font-family: 'icon';
+    font-size: 8px;
+    margin: 5px 0 0 4px;
+    font-weight: 600;
+    float: right;
+}
+.list{
+    font-family: azure-font-m;
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+.search{
+    max-width: 100%;
+    height: 45px;
+}
+.search-item{
+    width: 44px;
+    padding-top: 12;
+    line-height: 40px;  
+}
+.search-item::after{
+    content: "\e721";
+    font-family: 'icon';
+   
+}
+.tablet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+.dots{
+    width: 28px;
+    height: 14px;
+    padding-top: 10px;
+    line-height: 5px;
+}
+.last-items{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
 
-
-
-
-@media screen and (max-width:765px){
+@media screen and (max-width:768px){
 .nav-bar{
     display: none;
 }
@@ -88,20 +165,16 @@ li{
     width: 100%;
     height: 80%;
     font: 16px;
-    padding-bottom: 15px;
-    padding-right: 18px;
-    padding-left: 18px;
-    padding-top: 15px;
+    padding: 12px 18px 15px 5px;
     align-items: center;
    }
 .first-items{
     display: flex;
     align-items: center;
-    /* justify-content: flex-end; */
-    padding-right: 16px;
+    height: 54px;
+    padding-right: 23px;
+    padding-left:.5px ;
     transform: translateX(5px);
-    /* width: 130;
-    height: 45.4; */
 }
 .second-item{
     display: flex;
@@ -112,19 +185,18 @@ li{
     padding:1px .5px ;
     align-items: center;
     transform: translateX(1px);
-
 }
-.name{
+.azure-text{
     font-family:"azure-font-s" ;
     font-size: 18px;
     width: 44.78px;
-    height: 24;
+    height: 24px;
     line-height: 44%;
-    padding-left: 2px;
-    /* font-weight: 500; */       
+    padding-left: 0px;
+    padding-right: 12px;      
 }
 .menu-bar{
-    width: 32.8px !important;
+    width: 33.028px !important;
     font-family: inherit;
     color: inherit;
     text-align: left;
@@ -133,37 +205,54 @@ li{
    }
 .logo{
     
-    width: 29px;
-    height: 32px;
-    /* min-width: 130px; */
+    width: 39.9px;
+    height: 34px;
+    padding-right: 2px;
+    padding-left: 4px;
+    padding-top: 3px;
+}
+
+.search{
+    max-width: 100%;
+    height: 45px;
 }
 .search-item{
     width: 44px;
-    /* height: px; */
-    padding-top: 25px;
-    line-height: 40px;
-    
+    padding-top: 12;
+    line-height: 40px;  
 }
+
 
 .search-item::after{
     content: "\e721";
     font-family: 'icon';
-}
-.search{
-    font-family: inherit;
-    color: inherit;
-    background: transparent;
-    width: 50px;
-    height: 25px;
-    /* padding: 1px 6px; */
-    
+   
 }
 .sign-in{
     font-family: 'azure-font-m';
     font-weight: 400;
-    font: 14px;
-    font-size: small;
-    line-height: 5px;
-    padding: 20px;
+    font-size: 14px;
+    line-height: 7px;
+    padding: 11px;
+    padding-top: 10px; 
 }
+}
+@media screen and (min-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+    .nav-bar{
+        display: block;
+    }
+    .mobile-nav .search-item{
+        display: block;
+    }
+    .big-screen{
+        display: none;
+    }  
+}
+@media screen and (min-width:2560px){
+    .mobile-nav{
+        display: none;
+    }
 }
