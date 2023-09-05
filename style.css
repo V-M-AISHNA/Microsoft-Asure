@@ -1,0 +1,78 @@
+@font-face{
+    font-family:"azure-font" ;
+    src: url(assets/fonts/latest.woff2);
+    font-weight: 500;
+}
+@font-face{
+    font-family:"azure-font" ;
+    src: url(assets/fonts/latest\ \(1\).woff2);
+    font-weight: 600;
+}
+@font-face{
+    font-family:"azure-font" ;
+    src: url(assets/fonts/MWFFluentIcons.woff2);
+    font-weight: 800;
+}
+*{
+    box-sizing: none;
+    font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+@media screen and (max-width:768px){
+    .mobile-view{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 15px 15px;
+    }
+    .azure-nav-hamburger{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .hamburger{
+        width: 21.058px;
+        height: 15.2px;
+    }
+    .azure-text{
+        font-family: 'azure-font';
+        font-family: 600;
+        height: 26px;
+        font-size: 17.5px;
+        padding-left: 14.4px;
+    }
+    .ms-logo{
+        width: 37.2px;
+        height: 32px;
+        padding-top: 1px;
+        /* padding-left: 21px; */
+    }
+    .ms-logo img { 
+        width: 34.5px;
+        height: 30px;
+        padding-left: 10px;
+    }
+    .search-signin{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10px;
+        padding-right: 7px;
+        padding-left: 5px;
+        }
+    .search {
+        width: 44px;
+        padding-top: 4px;
+        padding-right: 3px;
+    }
+    .search::after{
+        content: "\e721";
+        font-family: 'azure-font';
+        font-weight: 800; 
+    }
+    .sign-in-button{
+        font-size: 14px;
+        font-size: smaller;
+        padding-top: 1px;
+         }
+}
