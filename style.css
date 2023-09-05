@@ -17,8 +17,7 @@
     box-sizing: none;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-
-@media screen and (max-width:768px){
+/* mobile-view */
     .mobile-view{
         display: flex;
         justify-content: space-between;
@@ -32,17 +31,17 @@
     }
     .hamburger{
         width: 20.058px;
-        height: 10.2px;
-        padding-left: 1px;
+        height: 13.7px;
+        padding-left: .9px;
     }
     .azure-text{
         font-family: 'azure-font';
         font-family: 600;
         height: 27px;
         font-size: 18px;
-        padding-left: 15.5px;
-        padding-top: 2px;
-        letter-spacing: -0.5px;
+        padding-left: 15.7px;
+        padding-top: 1px;
+        letter-spacing: -0.55px;
     }
     .ms-logo{
         width: 35.9px;
@@ -74,11 +73,221 @@
         font-weight: 800; 
     }
     .sign-in-button{
-        font-size: 13px;
-        font-weight: 400px;
-        padding-top: 5px;
-        padding-left: .06px;
+        font-family: 'azure-font';
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        font-size: 13.9px;
+        padding-top: 1.8px;
+        padding-left: 0.01px;
+        padding-right: .01px;
         line-height: 1;
-        font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
          }
+
+
+@media screen and (min-width:767px) {
+    .mobile-view{
+        display: none;
+    }
+    .tab-view{
+        display: block;
+    }
+    .tab-nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+    }
+    .logo-text{
+        display: flex;
+    }
+    .ms-logo{
+        width: 35.9px;
+        height: 32px;
+        padding-top: .69px;
+        /* padding-left: 21px; */
+    }
+    .ms-logo img { 
+        width: 24.5px;
+        height: 38.5px;
+        padding-left: 3.8px;
+    }
+    .azure-text{
+        font-family: 'azure-font';
+        font-family: 600;
+        height: 21px;
+        font-size: 18px;
+        padding-left: 4.2px;
+        padding-top: 2px;
+        letter-spacing: -0.5px;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        height: 12px;
+        padding-left: 15.5px;
+    }
+    .list-item:first-child{
+        height: 12px;
+        padding-left: 20px;
+    }
+    .list-text{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .down-arrow{
+        line-height: 13px;
+    }
+    .down-arrow::after{
+        content: '\e70d';
+        font-family: 'azure-font';
+        font-size: 8.5px;
+        margin: 5px 0 0 4px;
+        font-weight: bold;
+        float: right;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+    }
+    .search {
+        width: 36px;
+        padding-top: 12px;
+        padding-right: 3px;
+    }
+    .search::after{
+        content: "\e721";
+        font-family: 'azure-font';
+        font-weight: 800; 
+    }
+    .more-sign-in{
+        display: flex;
+        padding-right: 0px;
+    }
+    .more{
+        width: 24px;
+        height: 14px;
+        padding-top: 3px;
+        line-height: 5px;
+        padding-right: 18px;
+    }
+    .sign-in{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 12.9px;
+        padding-top: 7px;
+        letter-spacing: -0.4px;
+         }
+}
+@media screen  and (min-width:1080px) {
+    .mobile-view{
+        display: none;
+    }
+    .tab-view{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+        padding-left: 2px;
+        /* justify-content: space-between; */
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        padding-left: 2px;
+    }
+    .logo-text{
+        display: flex;
+    }
+    .ms-logo{
+        width: 35.9px;
+        height: 31px;
+        padding-top: .39px;
+        /* padding-left: 21px; */
+    }
+    .ms-logo img { 
+        width: 23.9px;
+        height: 38.9px;
+        padding-left: 3.8px;
+    }
+    .azure-text{
+        font-family: 'azure-font';
+        font-family: 600;
+        height: 21px;
+        font-size: 18px;
+        padding-left: 15.5px;
+        padding-top: 2px;
+        letter-spacing: -0.5px;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        height: 12px;
+        padding-left: 15.5px;
+    }
+    .list-item:first-child{
+        height: 12px;
+        padding-left: 32px;
+    }
+    .list-text{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .down-arrow{
+        line-height: 13px;
+    }
+    .down-arrow::after{
+        content: '\e70d';
+        font-family: 'azure-font';
+        font-size: 8.5px;
+        margin: 5px 0 0 4px;
+        font-weight: bold;
+        float: right;
+    }
+    .search-bar{
+        display: flex;
+        border: 1px solid gray;
+        justify-content: space-between;
+        width: 120px;
+        height: 28px;
+        border-radius: 3px;
+    }
+    .search-text{
+        font-size: 12px;
+        padding-top: 8px;
+        padding-left: 13px;
+        color: gray;
+    }
+    .search{
+        padding-top: 6px;
+        padding-left: 46px;
+    }
+    .nav-right{
+        display: flex;
+        padding-left: 20px;
+    }
+    .right-list{
+        display: inline-flex;
+    }
+    .list-text-right{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
 }
