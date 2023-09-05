@@ -31,26 +31,29 @@
         justify-content: space-evenly;
     }
     .hamburger{
-        width: 21.058px;
-        height: 15.2px;
+        width: 20.058px;
+        height: 10.2px;
+        padding-left: 1px;
     }
     .azure-text{
         font-family: 'azure-font';
         font-family: 600;
-        height: 26px;
-        font-size: 17.5px;
-        padding-left: 14.4px;
+        height: 27px;
+        font-size: 18px;
+        padding-left: 15.5px;
+        padding-top: 2px;
+        letter-spacing: -0.5px;
     }
     .ms-logo{
-        width: 37.2px;
+        width: 35.9px;
         height: 32px;
-        padding-top: 1px;
+        padding-top: .69px;
         /* padding-left: 21px; */
     }
     .ms-logo img { 
-        width: 34.5px;
-        height: 30px;
-        padding-left: 10px;
+        width: 32.5px;
+        height: 31px;
+        padding-left: 10.6px;
     }
     .search-signin{
         display: flex;
@@ -71,8 +74,11 @@
         font-weight: 800; 
     }
     .sign-in-button{
-        font-size: 14px;
-        font-size: smaller;
-        padding-top: 1px;
+        font-size: 13px;
+        font-weight: 400px;
+        padding-top: 5px;
+        padding-left: .06px;
+        line-height: 1;
+        font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
          }
 }
