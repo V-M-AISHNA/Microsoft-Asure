@@ -18,11 +18,18 @@
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 /* mobile-view */
+@media screen and (min-width:200px) {
+    .tab-view{
+        display: none;
+    }
+    .desktop-view{
+        display: none;
+    }
     .mobile-view{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 15px 15px 15px;
+        padding: 2.5px 15px 15px 15px;
     }
     .azure-nav-hamburger{
         display: flex;
@@ -40,8 +47,8 @@
         height: 27px;
         font-size: 18px;
         padding-left: 15.7px;
-        padding-top: 1px;
-        letter-spacing: -0.55px;
+        padding-top: 1.8px;
+        letter-spacing: -0.45px;
     }
     .ms-logo{
         width: 35.9px;
@@ -50,22 +57,23 @@
         /* padding-left: 21px; */
     }
     .ms-logo img { 
-        width: 32.5px;
-        height: 31px;
-        padding-left: 10.6px;
+        width: 31.9px;
+        height: 32.4px;
+        padding-left: 12.6px;
     }
     .search-signin{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         height: 10px;
-        padding-right: 7px;
+        padding-right: 9px;
         padding-left: 5px;
         }
     .search {
         width: 44px;
-        padding-top: 4px;
-        padding-right: 3px;
+        height: 19px;
+        padding-top: 9px;
+        padding-right: 6px;
     }
     .search::after{
         content: "\e721";
@@ -77,12 +85,12 @@
         font-weight: 600;
         letter-spacing: -0.4px;
         font-size: 13.9px;
-        padding-top: 1.8px;
+        padding-top: 0.8px;
         padding-left: 0.01px;
         padding-right: .01px;
         line-height: 1;
          }
-
+        }
 
 @media screen and (min-width:767px) {
     .mobile-view{
@@ -187,22 +195,26 @@
         letter-spacing: -0.4px;
          }
 }
-@media screen  and (min-width:1080px) {
+@media screen  and (min-width:1440px) {
     .mobile-view{
         display: none;
     }
     .tab-view{
         display: none;
     }
+    .desktop-view{
+        display: block;
+    }
     .desktop-nav{
         display: flex;
-        padding-left: 2px;
-        /* justify-content: space-between; */
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
     }
     .nav-left{
         display: flex;
         align-items: center;
-        padding-left: 2px;
+        padding-left: 0px;
     }
     .logo-text{
         display: flex;
@@ -211,11 +223,10 @@
         width: 35.9px;
         height: 31px;
         padding-top: .39px;
-        /* padding-left: 21px; */
     }
     .ms-logo img { 
         width: 23.9px;
-        height: 38.9px;
+        height: 37px;
         padding-left: 3.8px;
     }
     .azure-text{
@@ -223,7 +234,7 @@
         font-family: 600;
         height: 21px;
         font-size: 18px;
-        padding-left: 15.5px;
+        padding-left: 15.9px;
         padding-top: 2px;
         letter-spacing: -0.5px;
     }
@@ -258,13 +269,18 @@
         font-weight: bold;
         float: right;
     }
+    .search-box{
+        padding-left: 11px;
+        width: 118px;
+        height: 28px;
+    }
     .search-bar{
         display: flex;
-        border: 1px solid gray;
+        border: 1px solid  #747479;
         justify-content: space-between;
-        width: 120px;
-        height: 28px;
-        border-radius: 3px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        /* padding-left: 20px; */
     }
     .search-text{
         font-size: 12px;
@@ -279,15 +295,63 @@
     .nav-right{
         display: flex;
         padding-left: 20px;
+        padding-top: 2px;
     }
     .right-list{
-        display: inline-flex;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.5px;
+        padding-left: 4.5px;
+        line-height: 13px;
     }
     .list-text-right{
         font-family: 'azure-font';
         font-weight: 600;
         font-size: 13px;
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-left: 15.7px;
+        letter-spacing: -0.5px;
     }
+    .list-text-right:first-child{
+        padding-left: 20px;
+
+    }
+    .account-sign-in{
+        display: flex;
+        padding-left: 10.77px;
+    }
+    .free-account-box{
+        padding-left: 2px;
+    }
+    
+    .free-account-btn
+    {
+    background-color: #89c402;
+    border: 1px solid #6f9e02;
+    border-radius: 4px;
+    color: #1a1a1f;
+    display: inline-block;
+    font-weight: 500;
+    padding-left: 5px;
+    padding: 9px 9px 9px 7px;
+    line-height: 1;
+    text-align: center;
+    width: 65.5px;
+    height: 8.5px;
+    }
+    .list-text-right-free{
+        padding-left: 2px;
+        font-size: 10.5px;
+        font-family: 'azure-font';
+        font-family: 600;
+    }
+    .sign-in-btn .list-text-right{
+        font-size: 12.65px;
+        padding-left: 17.01px;
+        padding-top: 8px;
+    }
+    /* .sign-in-btn{
+        padding-top:0 px;
+        padding-left: 20.9px;
+    } */
 }
