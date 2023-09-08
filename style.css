@@ -164,8 +164,11 @@
         .featured-news-nav ,.featured-news-body{
             margin-left: 8px;
         }
+        /* .featured-news-body{
+            position: fixed;
+        } */
         .feature{
-            background: yellow;
+            /* background: yellow; */
             align-items: center;
             justify-content: space-between;
             display: flex;
@@ -201,6 +204,73 @@
             font-family: 'azure-font';
             font-size: 24px;
             padding-top: 20px;
+            padding-bottom: 29px;
+        }
+        .feature-boxs{
+            /* padding: 10px; */
+            justify-content: space-evenly;
+        }
+        .card{
+            padding-top: 10px;
+        }
+        .box{
+            /* background-color: #6f9e02; */
+            width: 328px;
+            height: 334px;
+            padding: 10px;
+            padding-right: 0px;
+            padding-left: 10px;
+            border-radius: 16px;
+        }
+        .box-img{
+            width: 318px;
+            height: 142px;
+        }
+        .box-img img{
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+        }
+        .text{
+            padding-top: 10px;
+            padding-left: 6px;
+        }
+        .box-main-heading{
+            padding-top: 5px;
+            font-family: 'azure-font';
+            font-size: 17px;
+        }
+        .box-sub-heading{
+            padding-top:15px ;
+            font-size: 16px;
+            color: #142034;
+            padding-bottom: 32px;
+        }
+        .nav-btn-and-last-text{
+            display: flex;
+        }
+        .nav-btn{
+            background-color: #0078d4;
+            width: 29px;
+            height: 29px;
+            border-radius: 8px;
+        }
+        .arrow-btn::before{
+            content: "";
+            font-family: 'azure-font';
+            font-weight: 800;
+            line-height: 26.5px;
+            color: white;
+            padding: 6px;
+            align-items: center;
+            padding-left: 7px;
+        }
+        .last-text{
+            font-size: 14.5px;
+            font-family: 'azure-font';
+            color: #243a5e;
+            padding: 4px;
+            padding-left: 8px;
         }
         }
 
