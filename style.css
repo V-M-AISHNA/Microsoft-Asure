@@ -17,13 +17,20 @@
     box-sizing: none;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-
-@media screen and (max-width:768px){
+/* mobile-view */
+@media screen and (min-width:200px) {
+    .tab-view{
+        display: none;
+    }
+    .desktop-view{
+        display: none;
+    }
     .mobile-view{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 15px 15px 15px;
+        padding: 15px 15px 12px 15px;
+        background-color: white;
     }
     .azure-nav-hamburger{
         display: flex;
@@ -31,39 +38,44 @@
         justify-content: space-evenly;
     }
     .hamburger{
-        width: 21.058px;
-        height: 15.2px;
+        width: 20.058px;
+        height: 13.7px;
+        padding-left: .9px;
     }
     .azure-text{
         font-family: 'azure-font';
         font-family: 600;
-        height: 26px;
-        font-size: 17.5px;
-        padding-left: 14.4px;
+        height: 27px;
+        font-size: 18px;
+        padding-left: 15.7px;
+        padding-top: 1.8px;
+        letter-spacing: -0.45px;
     }
     .ms-logo{
-        width: 37.2px;
+        width: 35.9px;
         height: 32px;
-        padding-top: 1px;
+        padding-top: .69px;
         /* padding-left: 21px; */
     }
     .ms-logo img { 
-        width: 34.5px;
-        height: 30px;
-        padding-left: 10px;
+        width: 31.9999px;
+        /* height: 32.4px; */
+        height: -38.599999999999994px;
+        padding-left: 12.8999999px;
     }
     .search-signin{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         height: 10px;
-        padding-right: 7px;
+        padding-right: 9px;
         padding-left: 5px;
         }
     .search {
         width: 44px;
-        padding-top: 4px;
-        padding-right: 3px;
+        height: 19px;
+        padding-top: 9px;
+        padding-right: 6px;
     }
     .search::after{
         content: "\e721";
@@ -71,8 +83,383 @@
         font-weight: 800; 
     }
     .sign-in-button{
-        font-size: 14px;
-        font-size: smaller;
-        padding-top: 1px;
+        font-family: 'azure-font';
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        font-size: 13.9px;
+        padding-top: 0px;
+        padding-left: 0.01px;
+        padding-right: .01px;
+        line-height: 1;
          }
+         /* --main--- */
+         .home-page{
+            margin: -15px;
+         }
+         .home{
+            margin-left: 8px;
+            padding-bottom: 56px;
+            background-color: #f7f7f7;
+         }
+         .home-img{
+            padding: 0px;
+            padding-top: 9px;
+            margin: -8px;
+            width: auto;
+            height: auto;
+         }
+         .home-img img{
+            padding: 10px 0px 0px 0px;
+            width: 100%;
+            height: 100%;
+         }
+         .heading{
+            padding-top: 35px;
+            line-height: 40px;
+            /* padding-left: 7.5px; */
+            letter-spacing: -1.5px;
+         }
+         .home-text{
+            font-family: 'azure-font';
+            font-size: 32px;
+         }
+         .paragraph{
+            color: #142034;
+            font-size: 17px;
+            padding-top: 15px;
+            /* padding-left:9px; */
+            line-height: 27px;
+            word-spacing: -1px;  
+         }
+         .get-btn{
+            padding-top: 42px;
+         }
+         .get-started{
+            background: #0078D4;
+            width: 343px;
+            height: 44.5px;
+            border-radius: 8px;
+         }
+         .get-text{
+            font-family: 'azure-font';
+            color: white;
+            padding: 12px 15.7px;
+            font-size: 14.489977px;
+         }
+         .try-azure-btn{
+            padding-top: 8px;
+         }
+         .try-azure{
+            border: 2px solid rgb(43, 42, 42);
+            width: 340px;
+            height: 42.5px;
+            border-radius: 8px;
+         }
+         .try-text{
+            font-family: 'azure-font';
+            color: #243A5E;
+            padding: 11.5px 13.9776px;
+            font-size: 14.489977px;
+        }
+        .featured-news-nav ,.featured-news-body{
+            margin-left: 8px;
+        }
+        .feature{
+            background: yellow;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            width: 340px;
+            height: 55px;
+        }
+        .feature-text{
+            font-family: 'azure-font';
+            font-size: 10px;
+            color: #243A5E;
+            padding: 12.5px 1px;
+        }
+        .feature-down-arrow{
+            line-height: 13px;
+        }
+        .feature-down-arrow::after{
+            content: '\e70d';
+            font-family: 'azure-font';
+            font-size: 15.5px;
+            margin: 5px 0 0 4px;
+            font-weight: bold;
+            float: right;
+        }
+        .featured-news-body{
+            padding:56px 0px;
+        }
+        .featured-heading{
+            font-family: 'azure-font';
+            font-size: 12px;
+            color: #005597;
+        }
+        .featured-news-sub-heading{
+            font-family: 'azure-font';
+            font-size: 24px;
+            padding-top: 20px;
+        }
+        }
+
+@media screen and (min-width:767px) {
+    .mobile-view{
+        display: none;
+    }
+    .tab-view{
+        display: block;
+    }
+    .tab-nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+    }
+    .logo-text{
+        display: flex;
+    }
+    .ms-logo{
+        width: 35.9px;
+        height: 32px;
+        padding-top: .69px;
+        /* padding-left: 21px; */
+    }
+    .ms-logo img { 
+        width: 24.5px;
+        height: 38.5px;
+        padding-left: 3.8px;
+    }
+    .azure-text{
+        font-family: 'azure-font';
+        font-family: 600;
+        height: 21px;
+        font-size: 18px;
+        padding-left: 4.2px;
+        padding-top: 2px;
+        letter-spacing: -0.5px;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        height: 12px;
+        padding-left: 15.5px;
+    }
+    .list-item:first-child{
+        height: 12px;
+        padding-left: 20px;
+    }
+    .list-text{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .down-arrow{
+        line-height: 13px;
+    }
+    .down-arrow::after{
+        content: '\e70d';
+        font-family: 'azure-font';
+        font-size: 8.5px;
+        margin: 5px 0 0 4px;
+        font-weight: bold;
+        float: right;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+    }
+    .search {
+        width: 36px;
+        padding-top: 12px;
+        padding-right: 3px;
+    }
+    .search::after{
+        content: "\e721";
+        font-family: 'azure-font';
+        font-weight: 800; 
+    }
+    .more-sign-in{
+        display: flex;
+        padding-right: 0px;
+    }
+    .more{
+        width: 24px;
+        height: 14px;
+        padding-top: 3px;
+        line-height: 5px;
+        padding-right: 18px;
+    }
+    .sign-in{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 12.9px;
+        padding-top: 7px;
+        letter-spacing: -0.4px;
+         }
+}
+@media screen  and (min-width:1440px) {
+    .mobile-view{
+        display: none;
+    }
+    .tab-view{
+        display: none;
+    }
+    .desktop-view{
+        display: block;
+    }
+    .desktop-nav{
+        display: flex;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-left{
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .logo-text{
+        display: flex;
+    }
+    .ms-logo{
+        width: 35.9px;
+        height: 31px;
+        padding-top: .39px;
+    }
+    .ms-logo img { 
+        width: 23.9px;
+        height: 37px;
+        padding-left: 3.8px;
+    }
+    .azure-text{
+        font-family: 'azure-font';
+        font-family: 600;
+        height: 21px;
+        font-size: 18px;
+        padding-left: 15.9px;
+        padding-top: 2px;
+        letter-spacing: -0.5px;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        height: 12px;
+        padding-left: 15.5px;
+    }
+    .list-item:first-child{
+        height: 12px;
+        padding-left: 32px;
+    }
+    .list-text{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .down-arrow{
+        line-height: 13px;
+    }
+    .down-arrow::after{
+        content: '\e70d';
+        font-family: 'azure-font';
+        font-size: 8.5px;
+        margin: 5px 0 0 4px;
+        font-weight: bold;
+        float: right;
+    }
+    .search-box{
+        padding-left: 11px;
+        width: 118px;
+        height: 28px;
+    }
+    .search-bar{
+        display: flex;
+        border: 1px solid  #747479;
+        justify-content: space-between;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        /* padding-left: 20px; */
+    }
+    .search-text{
+        font-size: 12px;
+        padding-top: 8px;
+        padding-left: 13px;
+        color: gray;
+    }
+    .search{
+        padding-top: 6px;
+        padding-left: 46px;
+    }
+    .nav-right{
+        display: flex;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    .right-list{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.5px;
+        padding-left: 4.5px;
+        line-height: 13px;
+    }
+    .list-text-right{
+        font-family: 'azure-font';
+        font-weight: 600;
+        font-size: 13px;
+        padding-left: 15.7px;
+        letter-spacing: -0.5px;
+    }
+    .list-text-right:first-child{
+        padding-left: 20px;
+
+    }
+    .account-sign-in{
+        display: flex;
+        padding-left: 10.77px;
+    }
+    .free-account-box{
+        padding-left: 2px;
+    }
+    
+    .free-account-btn
+    {
+    background-color: #89c402;
+    border: 1px solid #6f9e02;
+    border-radius: 4px;
+    color: #1a1a1f;
+    display: inline-block;
+    font-weight: 500;
+    padding-left: 5px;
+    padding: 9px 9px 9px 7px;
+    line-height: 1;
+    text-align: center;
+    width: 65.5px;
+    height: 8.5px;
+    }
+    .list-text-right-free{
+        padding-left: 2px;
+        font-size: 10.5px;
+        font-family: 'azure-font';
+        font-family: 600;
+    }
+    .sign-in-btn .list-text-right{
+        font-size: 12.65px;
+        padding-left: 17.01px;
+        padding-top: 8px;
+    }
 }
