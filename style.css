@@ -161,8 +161,9 @@
             padding: 11.5px 13.9776px;
             font-size: 14.489977px;
         }
-        .featured-news-nav ,.featured-news-body{
+        .featured-news-nav ,.featured-news-body,.solutions{
             margin-left: 8px;
+            margin-right: -7px;
         }
         /* .featured-news-body{
             position: fixed;
@@ -194,6 +195,7 @@
         }
         .featured-news-body{
             padding:56px 0px;
+            background-image: linear-gradient(to right, white,var(--root-color-brilliant-blue, #eaf4fc));
         }
         .featured-heading{
             font-family: 'azure-font';
@@ -214,7 +216,7 @@
             padding-top: 10px;
         }
         .box{
-            /* background-color: #6f9e02; */
+            background-color: #6f9e02;
             width: 328px;
             height: 334px;
             padding: 10px;
@@ -271,6 +273,178 @@
             color: #243a5e;
             padding: 4px;
             padding-left: 8px;
+        }
+        .solutions{
+            background-image: linear-gradient(to right, white,var(--root-color-brilliant-blue, #eaf4fc));
+            padding-bottom: 20px;
+        
+        }
+        .solution-text{
+            padding-bottom: 35px;
+        }
+        .solution-subtext{
+            font-family: 'azure-font';
+            font-size: 13px;
+            color: #005597;
+            padding: 12.5px 1px;
+        }
+        .find-solutions-text{
+            font-family: 'azure-font';
+            font-size: 23px;
+        }
+        .tab-group{
+            display: flex;   
+            padding-bottom: 39px;
+        }
+        .items{
+            display: flex;
+            overflow: scroll;
+             width: 344px;
+             position: relative;
+        }
+        .tab-item{
+            padding: 0 12px;
+        }
+        .featured-solution{
+            background-color: #005597;
+            border-radius: 22px;
+            width: 165px;
+            height: 43px;
+        }
+        .featured-solution-text{
+            padding: 14px 10px 14px 16px;
+            color: #fff;
+        }
+        .ai{
+            background-color: #e6f2fb;
+            border-radius: 22px;
+            width: 48px;
+            height: 43px;
+        }
+        .ai-text{
+            padding: 14px 10px 14px 16px;
+            color: #243a5e;
+        }
+        .cloud-migration{
+            background-color: #e6f2fb;
+            border-radius: 22px;
+            width: 144px;
+            height: 43px;
+        }
+        .cloud-migration-text{
+            padding: 14px 10px 14px 16px;
+            color: #243a5e;
+        }
+        .data-and-analytics{
+            background-color: #e6f2fb;
+            border-radius: 22px;
+            width: 165px;
+            height: 43px;
+        }
+        .data-and-analytics-text{
+            padding: 14px 10px 14px 16px;
+            color: #243a5e;
+        }
+        .hybrid-cloud{
+            background-color: #e6f2fb;
+            border-radius: 22px;
+            width: 116px;
+            height: 43px;
+        }
+        .hybrid-cloud-text{
+            padding: 14px 10px 14px 16px;
+            color: #243a5e;
+        }
+        .next-arrow{
+            float: right;
+            position: absolute;
+            padding-left: 303px;
+            
+        }
+        .arrow-tab{
+            color: #243a5e;
+            width: 11px;
+            height: 11px;
+            border: 2px solid #243a5e;
+            border-radius: 22px;
+            padding: 14px 10px 14px 16px;
+            margin: auto;
+        }
+        .arrow-next{
+            /* padding: 0;
+            margin: 0; */
+        }
+        .arrow-next::after{
+            content: "";
+            font-family: 'azure-font';
+            font-weight: 800;
+            font-size: 23px;
+            line-height: 11px;
+            margin-left: -7px;
+        }
+        .ai-text-and-arrow{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 340px;
+             height: 55px;
+             font-family: 'azure-font';
+            font-weight: 600;
+            font-size: 19px;
+            color: #0c1420;
+            padding-bottom: 12px;
+        }
+        .up-arrow::before{
+            font-family: 'azure-font';
+            font-family: 800;
+            content: "";
+        }
+        .ai-sub-text{
+            font-size: 15px;
+            padding-bottom: 12px;
+        }
+        .explore-azure-solution-text{
+            text-decoration: underline;
+            color: #0c1420;
+            font-family: 'azure-font';
+            font-size: 15px;
+            padding-bottom: 28px;
+        }
+        .explore-img{
+            width: 333px;
+           padding-bottom: 17px;
+        }
+        .explore-img img{
+            width: 100%;
+            border-radius: 22px;
+        }
+        .list-box{
+            padding-bottom: 26px;
+        }
+        .list-box .item-and-arrow{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            border-top: 0.02px solid black;
+            /* border-bottom: 0.02px solid black; */
+            padding: 25px 0px;
+        }
+        .list-box .item-and-arrow:last-child{
+            border-bottom: 0.02px solid black;
+        }
+
+        .list-box-text{
+            font-size: 18px;
+            font-family: 'azure-font';
+        }
+        .list-box-up-arrow::after{
+            content: '\e70d';
+            font-family: 'azure-font';
+            font-size: 15.5px;
+            margin: 5px 0 0 4px;
+            font-weight: bold;
+            float: right;
         }
         }
 
