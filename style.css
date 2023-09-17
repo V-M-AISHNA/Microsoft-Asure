@@ -116,8 +116,7 @@ body {
 
 /* --main--- */
 
-.home-page
-.home {
+.home-page .home {
     padding-bottom: 100px;
     background-color: #f7f7f7;
     margin-left: 0px;
@@ -308,7 +307,7 @@ body {
 }
 
 .box-img {
-    width: 98%;
+    width: 100%;
 }
 
 .box-img img {
@@ -509,9 +508,8 @@ body {
     color: #0c1420;
     padding-bottom: 12px;
 }
-.up-arrow{
 
-}
+.up-arrow {}
 
 .up-arrow::before {
     font-family: 'azure-font';
@@ -953,7 +951,8 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
 }
-.desktop-stories-list{
+
+.desktop-stories-list {
     display: none;
 }
 
@@ -981,11 +980,12 @@ body {
 .customer-box {
     background-color: lightcyan;
     margin-bottom: 20px;
+    border-radius: 18px;
 }
 
 .customer-box-img img {
     width: 100%;
-    border-radius: 18px;
+    border-radius: 18px 18px 0px 0px
 }
 
 .customer-box-items {
@@ -1243,7 +1243,7 @@ body {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom:36px;
+    padding-bottom: 36px;
 
 }
 
@@ -1283,7 +1283,8 @@ body {
     margin-left: 12px;
     gap: 28px;
 }
-.footer-nav-group{
+
+.footer-nav-group {
     margin-top: 36px;
 }
 
@@ -1296,7 +1297,7 @@ body {
     text-align: left;
     border: 1px solid transparent;
     background-color: #eaebec;
-    padding: 12px 24px;
+    padding: 10px 23px;
     margin: 0;
     margin-top: 36px;
 }
@@ -1317,13 +1318,18 @@ body {
     padding-left: 12px;
     line-height: 1;
 }
-.footer-nav-actions{
+
+.footer-nav-actions {
     margin-top: 36px;
 }
-.change-lang-text{
+
+.change-lang-text {
     margin-bottom: 4px;
+    font-family: 'azure-font';
+    font-weight: 600;
 }
-.select{
+
+.select {
     color: #1a1a1f;
     line-height: 1.2;
     font-size: 14px;
@@ -1334,7 +1340,8 @@ body {
     border: 1px solid #747479;
     background-color: white;
 }
-.tick-icon-and-privacy{
+
+.tick-icon-and-privacy {
     display: flex;
     gap: 12px;
     align-items: center;
@@ -1342,52 +1349,59 @@ body {
     margin-top: 24px;
     text-decoration: none;
 }
-.privacy-text{
+
+.privacy-text {
     font-family: 'azure-font';
     font-weight: 600;
     font-size: 12px;
     color: black;
 }
-.footer-text{
+
+.footer-text {
     margin-top: 36px;
     display: flex;
     align-items: flex-start;
 }
 
-.footer-text ul{
+.footer-text ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.footer-text-list{
+
+.footer-text-list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+
 .footer-text-list li {
     color: #1a1a1f;
     display: block;
-    padding: 2px 0;
+    padding: 0px 0;
     text-decoration: none;
     background-color: none;
     border: 0;
-    
+
 }
-.footer-text-list p{
+
+.footer-text-list p {
     font-family: 'azure-font';
     font-weight: 600;
     margin-bottom: 12px;
     margin-left: 16px;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: -0.03em;
 }
-.microsoft{
+
+.microsoft {
     white-space: nowrap;
     font-weight: 600;
     padding: 2px 0;
     margin-left: 12px;
 }
+
 @media screen and (min-width:540px) {
 
     .home,
@@ -1422,13 +1436,14 @@ body {
         padding-bottom: 56px;
     }
 
+
     .tab-nav-bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 8px;
         margin-bottom: -8.5px;
-        padding-bottom: 15px;
+        padding-bottom: 12px;
     }
 
 
@@ -1543,8 +1558,14 @@ body {
         display: block;
     }
 
-    .home {
+    .home-img img {
+        padding: 0;
+    }
+
+    .home-page .home {
         padding-bottom: 95px;
+        padding-right: 4rem;
+        padding-left: 3.5rem;
     }
 
     .home-text {
@@ -1562,6 +1583,8 @@ body {
     .button-group {
         display: flex;
         align-items: center;
+        margin-left: 8px;
+        margin-top: -1px;
     }
 
     .get-btn {
@@ -1602,7 +1625,7 @@ body {
 
     .feature-text {
         font-size: 12.3px;
-        padding: 12.5px 4.5px;
+        padding: 12.5px 19.5px;
         letter-spacing: -0.6px;
     }
 
@@ -1618,12 +1641,144 @@ body {
 
     .featured-news-body {
         padding-top: 61px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 56px;
     }
+
 
     .featured-heading {
         letter-spacing: 0.5px;
         font-size: 12.6px;
         padding-left: 2px;
+    }
+
+    .solutions {
+        padding-top: 56px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 56px;
+
+    }
+
+    .items {
+        width: auto;
+    }
+
+    .tab-item {
+        padding: 0 6px;
+    }
+
+    .next-arrow {
+        right: 4rem;
+    }
+
+    .list-box {
+        width: auto;
+    }
+
+    .list-box .item-and-arrow {
+        justify-content: unset;
+    }
+
+    .product-and-service {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        background-color: #ddedfa;
+    }
+
+    .product-tab-items {
+        width: auto;
+    }
+
+    .product-card {
+        padding-top: 18px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 18px;
+    }
+
+    .resources {
+        padding-top: 56px;
+        padding-bottom: 48px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .resource-tab-items {
+        width: auto;
+    }
+
+    .it-img-block {
+        padding-bottom: 104px;
+    }
+
+    .azure-global-block {
+        margin: -64px;
+    }
+
+    .azure-global-box {
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .get-more-value-text {
+        padding-top: 111px;
+        margin-bottom: 23px;
+    }
+
+    .customer-stories {
+        margin-top: 0;
+        padding-top: 48px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 48px;
+    }
+
+    .customer-main-text {
+        padding-top: 0;
+    }
+
+    .customer-product {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .customer-box {
+        margin-bottom: 30px;
+    }
+
+    .customer-box-items {
+        padding-left: 16px;
+    }
+
+    .case-study-btn {
+        width: 97px;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .change-lang-and-btn {
+        display: flex;
+        gap: 24px;
+        align-items: flex-end;
+    }
+
+    .tick-icon-and-privacy {
+        line-height: 0;
+    }
+
+    .select {
+        width: 188px;
+    }
+
+    .mobile-footer {
+        padding-left: 18px;
+        padding-right: 14px;
     }
 
     .desk-ai-block {
@@ -1632,9 +1787,41 @@ body {
 
 }
 
-@media screen and (min-width:1022px) {
+@media screen and (min-width:1023px) {
     .home-img img {
         display: none;
+    }
+
+    .tab-nav-bar {
+        /* height: 54.8px; */
+        margin-right: 1px;
+    }
+
+    .list {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .list-item:first-child {
+        /* height: 12px; */
+        padding-left: 22.1px;
+    }
+
+    .list-item {
+        padding-left: 18.2px;
+    }
+
+    .down-arrow {
+        line-height: 14px;
+    }
+
+    .more {
+        padding-right: 19px;
+    }
+
+    .home-page {
+        padding-top: 12px;
+        padding-bottom: 56px;
     }
 
     .home-img {
@@ -1642,21 +1829,16 @@ body {
         height: 555px;
         background-size: cover;
         background-position: 50.1% 50%;
-        margin: -8px;
+        margin: 0;
         position: relative;
     }
 
-    .home {
-        /* background-image: url(assets/image/azure-hp-hero.avif);
-        height: 560px;
-        background-size: cover;
-        background-position: 52% 50%;
-        margin:0; */
+    .home-page .home {
         position: absolute;
         /* top: 149px; */
         top: 149px;
         left: 0;
-        background: transparent;
+        background-color: transparent;
         padding-left: 47.5px;
         width: 450px;
         padding-top: 0;
@@ -1766,8 +1948,10 @@ body {
         margin: -8px;
         margin-top: 3px;
         padding-top: 98px;
-        padding-left: 56px;
+        /* padding-left: 56px; */
         padding-bottom: 118px;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
 
     }
 
@@ -1784,7 +1968,9 @@ body {
 
     .feature-boxs {
         display: flex;
-        margin-left: -17px;
+        flex-direction: row;
+        /* margin-left: -17px; */
+        gap: 0.5rem;
     }
 
     .box-img {
@@ -1824,8 +2010,10 @@ body {
 
     .solutions {
         margin: -8px;
-        padding-left: 56px;
+        /* padding-left: 56px; */
         padding-bottom: 118px;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
     }
 
     .solution-subtext {
@@ -1857,7 +2045,7 @@ body {
         display: none;
     }
 
-    .ai {
+    .list-box {
         display: none;
     }
 
@@ -1872,17 +2060,33 @@ body {
         padding-bottom: 28px;
     }
 
+    .nav-btn-and-last-text {
+        display: none;
+    }
+
     .ai-item-block {
         margin: -25px 47px;
         margin-right: 61px;
     }
 
-    .list-box {
+    /* .list-box {
         margin-left: 60px;
         width: 360px;
+    } */
+    .desk {
+        display: block;
+        margin-left: 47px;
+        margin-right: 47px;
     }
 
-    .list-box .item-and-arrow {
+    .ai-nav {
+        display: block;
+        display: flex;
+        margin-left: 47px;
+        margin-right: 47px;
+    }
+
+    .desk .item-and-arrow {
         justify-content: unset;
         width: 236px;
     }
@@ -1904,9 +2108,11 @@ body {
     .product-and-service {
         background: rgb(241, 250, 250);
         margin: -8px;
-        padding-left: 56px;
+        /* padding-left: 56px; */
         padding-top: 78px;
-        padding-bottom: 85px;
+        padding-bottom: 96px;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
     }
 
     .product-tab-items {
@@ -1914,7 +2120,14 @@ body {
         overflow: hidden;
     }
 
+    .product-nav {
+        display: block;
+        display: flex;
+        padding-top: 4rem;
+    }
+
     .azure-ai-services-container {
+        display: block;
         position: relative;
     }
 
@@ -1983,7 +2196,7 @@ body {
     }
 
     .nav-btn-and-last-text {
-        padding-top: 18px;
+        /* padding-top: 18px; */
     }
 
     .resources {
@@ -2035,16 +2248,24 @@ body {
         line-height: 28px;
     }
 
+    .optimize-text {
+        font-size: 17px;
+    }
+
     .it-img-block {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 553px;
+        width: 598px;
         border-radius: 15px;
         margin-top: 32px;
         padding: 20px;
-        margin-bottom: 73px;
+        margin-bottom: 135px;
         background-color: rgb(217, 231, 235);
+    }
+
+    .azure-global-block {
+        margin: -65px;
     }
 
     .it-img {
@@ -2122,9 +2343,11 @@ body {
     }
 
     .desktop-stories-list {
+        display: block;
         width: 897px;
         border-radius: 7px;
         background-color: rgb(196, 204, 196);
+        box-sizing: border-box;
     }
 
     .stories-list {
@@ -2145,9 +2368,15 @@ body {
 
     .stories-list-item {
         padding-left: 25px;
+        box-sizing: border-box;
+        border-right: 2px solid grey;
     }
 
-    .stories-list-first-item {
+    .stories-list-item:last-child {
+        border: none;
+    }
+
+    .stories-list-item-first-item {
         border-bottom: 7px solid #0078D4;
         margin-bottom: -10px;
     }
@@ -2165,6 +2394,8 @@ body {
 
     .next-step-boxs {
         display: flex;
+        flex-direction: row;
+        row-gap: 0.5rem;
     }
 
     .next-card {
@@ -2207,6 +2438,82 @@ body {
     .touch {
         margin-top: -45px;
     }
+
+    .link-group {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .link-item {
+        color: #0067b8;
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    .mobile-footer {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .get-btn-and-social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media {
+        padding-left: 25px;
+    }
+
+    .footer-nav-group {
+        display: none;
+    }
+
+    .footer-col-text {
+        margin-top: 36px;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 24px;
+    }
+
+    .col-header {
+        font-family: 'azure-font';
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.3;
+        padding: 2px 0;
+    }
+
+    .col-list li {
+        color: #1a1a1f;
+        font-size: 9px;
+        font-family: 'azure-font';
+        font-family: 600;
+    }
+
+    .col-list p {
+        letter-spacing: -0.05em;
+        margin-bottom: 22px;
+        padding: 2px 0;
+    }
+
+    .col-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .select {
+        width: 165px;
+    }
+
+    .footer-nav-actions {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 24px;
+    }
+
 }
 
 @media screen and (min-width:1440px) {
@@ -2303,7 +2610,8 @@ body {
     .search-box {
         padding-left: 11px;
         width: 118px;
-        height: 28px;
+        height: 12px;
+        margin-right: 3px;
     }
 
     .search-bar {
@@ -2313,24 +2621,36 @@ body {
         background-color: #f8f9fa;
         border-radius: 4px;
         /* padding-left: 20px; */
+        color: #4c4c51;
+        font-size: 13px;
+        padding-left: -1px;
+        padding-right: 24px;
+        min-height: 32px;
     }
 
     .search-text {
-        font-size: 12px;
+        font-size: 13px;
         padding-top: 8px;
-        padding-left: 13px;
+        padding-left: 8px;
         color: gray;
     }
 
     .search {
         padding-top: 6px;
-        padding-left: 45px;
+        padding-left: 41px;
     }
 
     .nav-right {
-        display: flex;
+        /* display: flex;
+        align-items: baseline;
         padding-left: 20px;
-        padding-top: 2px;
+        padding-top: 2px; */
+        display: flex;
+        align-items: baseline;
+        padding-left: -10px;
+        margin-right: -16px;
+        padding-top: 0px;
+        margin-top: -3px;
     }
 
     .right-list {
@@ -2346,7 +2666,7 @@ body {
         font-family: 'azure-font';
         font-weight: 600;
         font-size: 13px;
-        padding-left: 15.7px;
+        padding-left: 16.7px;
         letter-spacing: -0.5px;
     }
 
@@ -2357,12 +2677,13 @@ body {
 
     .account-sign-in {
         display: flex;
-        align-items: center;
-        padding-left: 10.77px;
+    align-items: center;
+    padding-left: 5.77px;
     }
 
     .free-account-box {
         padding-left: 2px;
+        margin: 0 6px;
     }
 
     .free-account-btn {
@@ -2371,32 +2692,53 @@ body {
         border-radius: 4px;
         color: #1a1a1f;
         display: inline-block;
-        font-weight: 500;
-        padding-left: 5px;
-        padding: 9px 9px 9px 7px;
-        line-height: 1;
+        /* font-size: 12px; */
+        font-weight: 600;
+        padding: 9.6px;
+        /* line-height: 1; */
         text-align: center;
-        width: 65.5px;
-        height: 8.5px;
+        text-decoration: none;
     }
 
     .list-text-right-free {
-        padding-left: 2px;
-        font-size: 10.5px;
+        padding-left: 0px;
+        font-size: 12px;
         font-family: 'azure-font';
-        font-family: 600;
+        font-weight: 500;
+        letter-spacing: -0.5px;
     }
 
     .sign-in-btn .list-text-right {
         padding-bottom: 5px;
         font-size: 13px;
         padding-left: 0;
+        padding: 20px 8px;
+    }
+
+    /* .home-img {
+        margin: -8px;
+    } */
+    .list-item:first-child {
+        height: 12px;
+        padding-left: 33px;
+    }
+
+    .down-arrow {
+        line-height: 14px;
+    }
+
+    .list-item {
+        padding-left: 16px;
     }
 
     .home-img {
-        margin: -8px;
+        background-image: url(assets/image/azure-hp-hero.avif);
+        height: 555px;
+        background-size: cover;
+        background-position: 50.1% 50%;
+        margin: 7px;
+        position: relative;
     }
-
 
     /* .home-img{
         background-image: url(assets/image/azure-hp-hero.avif);
