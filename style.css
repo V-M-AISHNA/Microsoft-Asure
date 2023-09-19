@@ -1277,6 +1277,8 @@ body {
 
 .get-the-mobile-app-btn {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .get-the-mobile-app-text {
@@ -1873,7 +1875,7 @@ body {
 
     .tab-nav-bar {
         /* height: 54.8px; */
-        margin-right: 1px;
+        margin-right: 8px;
     }
 
     .list {
@@ -1883,11 +1885,11 @@ body {
 
     .list-item:first-child {
         /* height: 12px; */
-        padding-left: 22.1px;
+        padding-left: 19.7px;
     }
 
     .list-item {
-        padding-left: 18.2px;
+        padding-left: 15.5px;
     }
 
     .down-arrow {
@@ -1895,11 +1897,14 @@ body {
     }
 
     .more {
-        padding-right: 19px;
+        padding-right: 18px;
+    }
+    .search{
+        padding-right: 3.1px;
     }
 
     .home-page {
-        padding-top: 12px;
+        padding-top: 11px;
         padding-bottom: 56px;
     }
 
@@ -1907,7 +1912,7 @@ body {
         background-image: url(assets/image/azure-hp-hero.avif);
         height: 555px;
         background-size: cover;
-        background-position: 50.1% 50%;
+        background-position: 49.999% 50%;
         margin: 0;
         position: relative;
     }
@@ -1915,11 +1920,11 @@ body {
     .home-page .home {
         position: absolute;
         /* top: 149px; */
-        top: 149px;
+        top: 157px;
         left: 0;
         background-color: transparent;
         padding-left: 47.5px;
-        width: 450px;
+        width: 460px;
         padding-top: 0;
     }
 
@@ -1945,11 +1950,11 @@ body {
     }
 
     .button-group {
-        padding: 5px 0px 0px 0.5px;
+        padding: 5.6px 0px 0px 0.5px;
     }
 
     .try-azure-btn {
-        padding-top: 39px;
+        padding-top: 41px;
     }
 
     .try-azure {
@@ -1959,7 +1964,7 @@ body {
 
     .try-text {
         font-size: 15.289977px;
-        padding: 10.5px 14.9776px;
+        padding: 10px 14.9776px;
     }
 
     .feature {
@@ -1971,27 +1976,34 @@ body {
         justify-content: space-between;
         background-color: white;
         width: auto;
-        height: 59px;
+        height: 50px;
         align-items: center;
+        padding-right: 15px;
+        padding-left: 11px;
     }
 
     .menu-list {
         display: flex;
         justify-content: space-between;
-        padding-left: 39.5px;
+        padding-left: 41.5px;
         padding-top: 9.5px;
     }
 
     .menu-list-box {
         padding-right: 0px;
-        margin-top: 12px;
-        padding-left: 43px;
+        margin-top: 5px;
+        padding-left: 41.5px;
+        padding-top: 5.5px;
+    }
+    .list-item{
+        font-size: 13.4px;
+        padding-left: 5px;
     }
 
     .menu-list-box:first-child {
         border-bottom: 4px solid #0078D4;
-        margin-top: 12px;
-        padding-left: 0;
+        margin-top: 4px;
+        padding-left: 3px;
 
     }
 
@@ -2024,7 +2036,7 @@ body {
     }
 
     .featured-news-body {
-        margin: -8px;
+        /* margin: -8px; */
         margin-top: 3px;
         padding-top: 98px;
         /* padding-left: 56px; */
@@ -2088,7 +2100,7 @@ body {
     }
 
     .solutions {
-        margin: -8px;
+        /* margin: -8px; */
         /* padding-left: 56px; */
         padding-bottom: 118px;
         padding-right: 56px;
@@ -2167,7 +2179,7 @@ body {
 
     .desk .item-and-arrow {
         justify-content: unset;
-        width: 236px;
+        width: 274px;
     }
 
     .list-box-text {
@@ -2183,10 +2195,14 @@ body {
     .explore-img {
         width: auto;
     }
+    .azure-infra-container {
+        height: 427px;
+        object-fit: cover;
+    }
 
     .product-and-service {
         background: rgb(241, 250, 250);
-        margin: -8px;
+        /* margin: -8px; */
         /* padding-left: 56px; */
         padding-top: 78px;
         padding-bottom: 96px;
@@ -2343,9 +2359,9 @@ body {
         background-color: rgb(217, 231, 235);
     }
 
-    .azure-global-block {
+    /* .azure-global-block {
         margin: -65px;
-    }
+    } */
 
     .it-img {
         width: auto;
@@ -2362,8 +2378,8 @@ body {
     .azure-global-block {
         height: 448px;
         width: auto;
-        margin: -48px;
-        margin-left: -57px;
+        /* margin: -48px;
+        margin-left: -57px; */
     }
 
     .azure-global-text {
@@ -2377,11 +2393,14 @@ body {
     }
 
     .azure-global-box-text {
-        padding: 12px 18px;
+        padding: 0px 18px;
     }
 
     .get-more-value-text {
         padding-top: 123px;
+    }
+    .mobile-view-solution .nav-btn-and-last-text{
+        display: none;
     }
 
     .blue-box {
@@ -2399,7 +2418,10 @@ body {
     .customer-product {
         display: flex;
     }
-
+    .nav-btn-and-last-text{
+        display: block;
+        display: flex;
+    }
     .products-text {
         padding-top: 73px;
     }
@@ -2425,7 +2447,8 @@ body {
         display: block;
         width: 897px;
         border-radius: 7px;
-        background-color: rgb(196, 204, 196);
+        border:1px solid rgb(225, 223, 223);
+        /* background-color: rgb(196, 204, 196); */
         box-sizing: border-box;
     }
 
@@ -2448,7 +2471,7 @@ body {
     .stories-list-item {
         padding-left: 25px;
         box-sizing: border-box;
-        border-right: 2px solid grey;
+        border-right: 2px solid rgb(219, 218, 218);
     }
 
     .stories-list-item:last-child {
@@ -2458,6 +2481,7 @@ body {
     .stories-list-item-first-item {
         border-bottom: 7px solid #0078D4;
         margin-bottom: -10px;
+        border-right: 2px solid rgb(219, 218, 218);
     }
 
     .customer-stories {
@@ -2474,15 +2498,22 @@ body {
     .next-step-boxs {
         display: flex;
         flex-direction: row;
-        row-gap: 8;
+        row-gap: 8px;
     }
+    .first{
+        padding-top: 60px;
+    }
+    .specilaist{
+        padding-top: 60px;
+    }
+    
 
-    .next-card {
+    /* .next-card {
         padding-left: 20px;
-    }
+    } */
 
     .next-item-box {
-        width: 254px;
+        width: 246px;
         height: 282px;
     }
 
@@ -2542,7 +2573,8 @@ body {
     }
 
     .social-media {
-        padding-left: 25px;
+        padding-left: 16px;
+        gap: 25px;
     }
 
     .footer-nav-group {
@@ -2558,23 +2590,23 @@ body {
 
     .col-header {
         font-family: 'azure-font';
-        font-size: 11px;
+        font-size: 11.5px;
         font-weight: 500;
         line-height: 1.3;
-        padding: 2px 0;
+        padding: 1px 0;
     }
 
     .col-list li {
         color: #1a1a1f;
-        font-size: 9px;
-        font-family: 'azure-font';
-        font-family: 600;
     }
 
     .col-list p {
         letter-spacing: -0.05em;
-        margin-bottom: 22px;
         padding: 2px 0;
+        font-weight: 600;
+        font-family: 'azure-font';
+        font-size: 10px;
+    margin-bottom: 14px;
     }
 
     .col-list {
@@ -2592,7 +2624,36 @@ body {
         grid-auto-flow: column;
         column-gap: 24px;
     }
-
+    .change-lang-and-btn {
+        gap: 24px;
+        align-items: unset;
+    }
+    .footer-text{
+        margin-top: 20.6px;
+    }
+    .footer-col-text {
+        letter-spacing: -0.04em;
+        line-height: 21px;
+    margin-top: 20px;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 24px;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .footer-nav-actions{
+        margin-top: 33.1px;
+    }    
+    .get-the-mobile-app-btn{
+        width: 199px;
+    padding: 6px;
+    }
+    .get-the-mobile-app-text {
+        padding-left: 4px;
+        font-size: 13.5px;
+    }
+    .footer-text-list{
+        margin-bottom: 12.5px;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -2728,7 +2789,7 @@ body {
         display: flex;
         align-items: baseline;
         padding-left: -10px;
-        margin-right: -16px;
+        /* margin-right: -16px; */
         padding-top: 0px;
         margin-top: -3px;
     }
@@ -2821,8 +2882,8 @@ body {
     height: 501px;
     background-size: cover;
     background-position: 51.1% 50%;
-    margin: 7px;
-    margin-left: 6px;
+    /* margin: 7px;
+    margin-left: 6px; */
     position: relative;
     margin-top: -5px;
     }
@@ -2856,15 +2917,16 @@ body {
     padding-left: 14px;
     padding-top: 0;
     }
-    .button-group{
-        margin-top: 10px;
-    padding-left: 5px;
-    }
+        .button-group {
+            margin-top: 12px;
+            padding-left: 3px;
+        }
     .menu-lap-desktop {
         margin-top: -11px;
         padding-right: 5%;
     padding-left: 5%;
     width: 90%;
+    height: 56px;
     }
     .menu-list {
         padding-left: 0.3px;
@@ -2880,6 +2942,17 @@ body {
     padding-top: 96px;
     padding-bottom: 96px;
     }
+    .featured-news-sub-heading {
+        font-size: 32px;
+        padding-bottom: 52px;
+    }
+    .featured-heading,.solution-subtext, .product-and-service-subtext,.resource-main-text {
+        font-size: 12px;
+    }
+    .find-solutions-text,.explore-tools-text{
+        font-size: 32px;
+    }
+
     .box{
         width: auto;
     }
@@ -2929,7 +3002,15 @@ body {
         grid-auto-flow: column;
     }
     .transform-text {
+        font-size: 40px;
         padding-bottom: 14px;
+    }
+    .optimize-text{
+        font-size: 24px;
+        padding-bottom: 22px;
+    }
+    .get-arrow-text{
+        font-size: 15px;
     }
     .resources{
         padding-right: 5%;
@@ -2973,10 +3054,10 @@ body {
     .it-img-block {
         width: 815px;
     }
-    .azure-global-block {
+    /* .azure-global-block {
         margin: -78px;
         margin-left: -64px;
-    }
+    } */
     .get-more-value-text {
         padding-top: 132px;
         font-size: 2.5rem;
@@ -3027,5 +3108,52 @@ body {
     .azure-global-box-text {
         line-height: 0px;
     }
-    
+    .link-item{
+        font-size: 16px;
+    }
+    .mobile-footer{
+        padding-bottom: 29px;
+    }
+    .footer-nav-actions {
+        column-gap: 64px;
+    }
+    .col-list p{
+        font-size: 11.5px;
+        letter-spacing: -0.28px;
+    }
+    .col-header{
+        font-size: 14px;
+        letter-spacing: -0.8px;
+    }
+    .footer-col-text {
+        padding-top: 2.5px;
+        letter-spacing: -0.04em;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+    .col-list {
+        margin-top: -2px;
+    }
+    .footer-nav-actions {
+        margin-top: 31px;
+    }
+    .footer-nav-actions{
+        margin-top: 31px;
+    }
+    .footer-col-text {
+        padding-top: 2.5px;
+        letter-spacing: -0.04em;
+        line-height: 22.5px;
+        margin-top: 18px;
+    }
+    .social-media {
+        padding-left: 26.5px;
+        padding-bottom: 4px;
+        gap: 24px;
+    }
+    .change-lang-and-btn {
+        gap: 24px;
+        align-items: flex-end;
+    }
+
 }
