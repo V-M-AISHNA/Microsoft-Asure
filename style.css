@@ -253,13 +253,15 @@ body {
     padding: 56px 14px;
     padding-right: 1rem;
     padding-left: 1rem;
-    background-image: linear-gradient(to right, #e8dde7, var(--root-color-brilliant-blue, #eaf4fc));
+    /* background-image: linear-gradient(to right, #e8dde7, var(--root-color-brilliant-blue, #eaf4fc)); */
+    background-image: linear-gradient(to right, #f8f1f7, #dae6ef);
 }
 
 .featured-heading {
     font-family: 'azure-font';
     font-size: 12px;
     color: #005597;
+    letter-spacing: 1.28px;
 }
 
 .featured-news-sub-heading {
@@ -358,6 +360,7 @@ body {
 
 .solution-text {
     padding-bottom: 35px;
+    
 }
 
 .solution-subtext {
@@ -365,6 +368,10 @@ body {
     font-size: 13px;
     color: #005597;
     padding: 12.5px 1px;
+    letter-spacing: 1.28px;
+}
+.solutions .next-arrow{
+    box-shadow: inset 0px 0px 25px 8px #e2ecf3, 0px 0px 27px 13px #dde3e7;
 }
 
 .find-solutions-text {
@@ -531,12 +538,12 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    border-top: 0.02px solid black;
+    border-top: 0.02px solid #c4c4ca;;
     padding: 25px 0px;
 }
 
 .list-box .item-and-arrow:last-child {
-    border-bottom: 0.02px solid black;
+    border-bottom: 0.02px solid #c4c4ca;;
 }
 
 .list-box-text {
@@ -570,6 +577,7 @@ body {
     font-size: 13px;
     color: #005597;
     padding: 12.5px 1px;
+    letter-spacing: 1.28px;
 }
 
 .explore-tools-text {
@@ -682,7 +690,8 @@ body {
 
 .product-card {
     background-color: rgb(255, 255, 255);
-    padding: 28px 18px 18px 18px;
+    /* padding: 28px 18px 18px 18px; */
+    padding: 16px;
     border-radius: 22px;
     box-shadow: 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
 }
@@ -741,6 +750,7 @@ body {
     font-size: 13px;
     color: #213556;
     padding: 12.5px 1px;
+    letter-spacing: 1.28px;
 }
 
 .transform-text {
@@ -957,6 +967,7 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
     padding-top: 48px;
+    background-image: linear-gradient(to right, #f8f1f7, #dae6ef);
 }
 
 .desktop-stories-list {
@@ -968,6 +979,7 @@ body {
     font-size: 13px;
     color: #005597;
     padding: 12.5px 1px;
+    letter-spacing: 1.28px;
 }
 
 .customer-sub-text {
@@ -2072,7 +2084,7 @@ body {
 
     .list-item {
         font-size: 13.4px;
-        padding-left: 5px;
+        padding-left: 15.6px;
     }
 
     .menu-list-box:first-child {
@@ -2581,7 +2593,7 @@ body {
     }
 
     .first {
-        padding-top: 60px;
+        padding-top: 23px;
     }
 
     .specilaist {
